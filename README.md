@@ -1,6 +1,9 @@
 # SAS_UKB_GWAS
 
-Modules used:
+### Prerequisites:
+python3.11.4
+bcftools-1.18
+
 dxpy module is loaded in python3.11.4
 
 For extracting the detailed breakdown of UKB RAP expenses you can use the following command:
