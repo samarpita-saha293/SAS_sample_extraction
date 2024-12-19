@@ -20,6 +20,9 @@ Available projects (CONTRIBUTE or higher):
 
 Pick a numbered choice [0]:
 
+Use dx login --timeout to control the expiration date, or
+dx logout to end this session.
+
 For extracting the detailed breakdown of UKB RAP expenses you can use the following command:
 
 ```
