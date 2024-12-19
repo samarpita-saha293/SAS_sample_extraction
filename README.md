@@ -12,7 +12,7 @@ dx login
 ```
 Your credentials will be acquired from https://auth.dnanexus.com
 
-Available projects (CONTRIBUTE or higher):
+Available projects:
 1. UKB_Jun_05_2024 (CONTRIBUTE)
 2. UKB_Mar_24_2023 (CONTRIBUTE)
 
