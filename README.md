@@ -45,4 +45,5 @@ Where you can find following section:
 -n N, --num-results N
 ```
 Max number of results (trees or jobs, as according to the search mode) to return (default 10)
+
 Note: 
