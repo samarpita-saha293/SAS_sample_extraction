@@ -18,7 +18,7 @@ Available projects (CONTRIBUTE or higher):
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
-### Detailed breakdown of UKB RAP expenses
+## Detailed breakdown of UKB RAP expenses
 
 In order to estimate the actual computing charges for the jobs of specific project executed from the last invoice, you can use the following command (the user executing this command needs to have at least CONTRIBUTOR access to the project):
 
