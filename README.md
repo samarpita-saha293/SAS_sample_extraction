@@ -1,6 +1,6 @@
 # SAS_UKB_GWAS
 
-### Prerequisites:
+### Prerequisites
 - python3.11.4
 - bcftools-1.18
 
