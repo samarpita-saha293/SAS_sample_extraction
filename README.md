@@ -18,4 +18,9 @@ In order to see more than last 10 jobs you can use parameter -n <number> to adju
 dx find jobs -h
 ```
 
+Where you can find following section:
+```
+-n N, --num-results N
+```
+Max number of results (trees or jobs, as according to the search mode) to return (default 10)
 Note: 
