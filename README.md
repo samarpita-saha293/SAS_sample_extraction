@@ -23,7 +23,7 @@ Use dx login --timeout to control the expiration date, or dx logout to end this 
 In order to estimate the actual computing charges for the jobs of specific project executed from the last invoice, you can use the following command (the user executing this command needs to have at least CONTRIBUTOR access to the project):
 
 ```
-dx find jobs --project project-xxxx --created-after "2024-09-30" --json > output_file
+dx find jobs --project project-xxxx --created-after "2024-09-30" --json > UKB_exp_report
 ```
 
 Here you need to specify the project-ID and the date when your last invoice was issued and this will give you the json output, where you can refer to the ".totalPrice" record showing the price of individual jobs.
