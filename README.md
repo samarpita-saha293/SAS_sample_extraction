@@ -6,22 +6,18 @@
 
 dxpy module is loaded in python3.11.4
 
+Before working on the project you need to login to your project account using your DNAnexus account credentials
+```
 dx login
-Acquiring credentials from https://auth.dnanexus.com
-Username [samarpita_cbr]:
-Password:
+```
+Your credentials will be acquired from https://auth.dnanexus.com
 
-Note: Use dx select --level VIEW or dx select --public to select from projects for
-which you only have VIEW permissions.
 
 Available projects (CONTRIBUTE or higher):
-0) UKB_Jun_05_2024 (CONTRIBUTE)
-1) UKB_Mar_24_2023 (CONTRIBUTE)
+1. UKB_Jun_05_2024 (CONTRIBUTE)
+2. UKB_Mar_24_2023 (CONTRIBUTE)
 
-Pick a numbered choice [0]:
-
-Use dx login --timeout to control the expiration date, or
-dx logout to end this session.
+Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
 In order to estimate the actual computing charges for the jobs of specific project executed from the last invoice, you can use the following command (the user executing this command needs to have at least CONTRIBUTOR access to the project):
 
