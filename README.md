@@ -6,6 +6,11 @@
 
 dxpy module is loaded in python3.11.4
 
+dx login
+Acquiring credentials from https://auth.dnanexus.com
+Username [samarpita_cbr]:
+Password:
+
 For extracting the detailed breakdown of UKB RAP expenses you can use the following command:
 
 ```
