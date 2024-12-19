@@ -11,6 +11,15 @@ Acquiring credentials from https://auth.dnanexus.com
 Username [samarpita_cbr]:
 Password:
 
+Note: Use dx select --level VIEW or dx select --public to select from projects for
+which you only have VIEW permissions.
+
+Available projects (CONTRIBUTE or higher):
+0) UKB_Jun_05_2024 (CONTRIBUTE)
+1) UKB_Mar_24_2023 (CONTRIBUTE)
+
+Pick a numbered choice [0]:
+
 For extracting the detailed breakdown of UKB RAP expenses you can use the following command:
 
 ```
