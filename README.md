@@ -1,8 +1,8 @@
 # SAS_UKB_GWAS
 
 ### Prerequisites:
-python3.11.4
-bcftools-1.18
+- python3.11.4
+- bcftools-1.18
 
 dxpy module is loaded in python3.11.4
 
