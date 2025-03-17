@@ -28,7 +28,7 @@ dx find jobs --project project-xxxx --created-after "2024-09-30" --json > UKB_ex
 
 Here, you need to specify the project-ID and the date when your last invoice was issued and this will give you the json output, where you can refer to the ".totalPrice" record showing the price of individual jobs.
 
-In order to see more than last 10 jobs you can use parameter -n <number> to adjust how many jobs you would like to get returned. You can also see the help of the dx find jobs function by executing:
+In order to see more than last 10 jobs you can use parameter -n <number> to adjust for the number of jobs you would like to get returned. You can also see the help of the dx find jobs function by executing:
 
 ```
 dx find jobs -h
