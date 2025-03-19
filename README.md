@@ -36,11 +36,11 @@ dx run swiss-army-knife \
 
 ### Components of the command: 
 -	**-iin** is used to specify the input. For the input we have .vcf.gz files from data-field 24310 (Bulk/DRAGEN WGS/DRAGEN population level WGS variants, pVCF format [500k release]). Along with the .vcf.gz files we have taken the SampleIDs.txt file which comprises of sample IDs of Indian, Pakistani and Bangladeshi Individuals.
--	-icmd is used to specify the BCFtools command, where we have used the flags –force-samples, -Oz and -o (Refer to the BCFtools Manual: samtools.github.io/bcftools/bcftools.html).
--	--tag is used to assign your job name or category.
--	--priority is set to normal.
--	--instance-type specifies is used to specify memory and storage capacity (per core), version denotes the version of the instance-type, and core denotes the no. of cores to be used. The instance type used for our jobs is mem1_ssd1_v2_x8, which has an estimated cost of £0.0780 or £0.1448 per hour per job (Refer to https://documentation.dnanexus.com/developer/api/running-analyses/instance-types).
--	--destination is used to specify the destination of output files.
+-	**-icmd** is used to specify the BCFtools command, where we have used the flags –force-samples, -Oz and -o (Refer to the BCFtools Manual: samtools.github.io/bcftools/bcftools.html).
+-	**--tag** is used to assign your job name or category.
+-	**--priority** is set to normal.
+-	**--instance-type** specifies is used to specify memory and storage capacity (per core), version denotes the version of the instance-type, and core denotes the no. of cores to be used. The instance type used for our jobs is mem1_ssd1_v2_x8, which has an estimated cost of £0.0780 or £0.1448 per hour per job (Refer to https://documentation.dnanexus.com/developer/api/running-analyses/instance-types).
+-	**--destination** is used to specify the destination of output files.
 
 For iterating this command for each chromosome use UKB_SAS_extract_SS.sh script. Also, make sure SAS_500k_sampleIDS.csv is in the same directory as and the bash script. SAS_500k_sampleIDS.csv comprises of the Sample IDs of the 8020 participants.
 
