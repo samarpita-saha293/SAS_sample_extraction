@@ -16,7 +16,7 @@ Before working on the project you need to login to your project account using yo
 ```
 dx login
 ```
-Your credentials will be acquired from https://auth.dnanexus.com . While logging in you will be asked to choose from the list of available projects to work on.
+Your credentials will be acquired from https://auth.dnanexus.com. While logging in you will be asked to choose from the list of available projects to work on.
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
