@@ -1,4 +1,4 @@
-# SAS_UKB_GWAS
+# SAS_sample_extraction
 
 ### Prerequisites
 - python3.11.4
