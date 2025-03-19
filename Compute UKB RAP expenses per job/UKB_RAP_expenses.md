@@ -20,5 +20,5 @@ Where you can find following section:
 ```
 Max number of results (trees or jobs, as according to the search mode) to return (default 10)
 
-Note: (again the user running that script will need at least CONTRIBUTOR access to the projects and hast to be ADMIN of the org). Inside a script you can change the date of the last invoice defined by variable "CREATED_AFTER" and the date has to be in format YYYY-MM-DD. Please feel free to upgrade and use the script as you wish.
+Note: (again the user running that script will need at least CONTRIBUTOR access to the projects and has to be ADMIN of the org). Inside a script you can change the date of the last invoice defined by variable "CREATED_AFTER" and the date has to be in format YYYY-MM-DD. Please feel free to upgrade and use the script as you wish.
 
