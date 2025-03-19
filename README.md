@@ -50,7 +50,9 @@ For iterating this command for each block of each chromosome use [UKB_SAS_extrac
 
 First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz
 ```
-dx cd /Cohorts/BCFtools_SAS_extract/Chr_9
+dx cd /Cohorts/BCFtools_SAS_extract/Chr_#
 
-dx download ${vcf_directory}ukb24310_c9_b${i}_v1_SAS_8020.vcf.gz
+dx download ukb24310_c#_b$_v1_SAS_8020.vcf.gz
 ```
+
+## STEP 3: Verify the Number of Variants in the downloaded files
