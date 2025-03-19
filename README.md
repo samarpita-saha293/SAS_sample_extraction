@@ -4,8 +4,9 @@ This GitHub repository provides tutorials and scripts used to analyze population
 
 ## Preprocessing workflow
 
-### Prerequisit![Screenshot (190)](https://github.com/user-attachments/assets/26433718-8c7d-4a11-8d29-c8bcb4be0b9b)
-es
+![Screenshot (190)](https://github.com/user-attachments/assets/26433718-8c7d-4a11-8d29-c8bcb4be0b9b)
+
+### Prerequisites
 - python3.11.4
 - bcftools-1.18
 
