@@ -10,7 +10,7 @@ This GitHub repository provides tutorials and scripts used to analyze population
 - python3.11.4
 - bcftools-1.18
 
-The DNAnexus dxpy Python library offers Python bindings for interacting with the DNAnexus Platform through its API. dxpy module is loaded in python3.11.4.
+The DNAnexus dxpy Python library offers Python bindings for interacting with the DNAnexus Platform through its API. The dxpy module is loaded in python3.11.4 an can be accessed via the HPC.
 
 Before working on the project you need to login to your project account using your DNAnexus account credentials
 ```
