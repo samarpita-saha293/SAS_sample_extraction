@@ -7,10 +7,10 @@ This GitHub repository provides tutorials and scripts used to analyze population
 ![Screenshot (190)](https://github.com/user-attachments/assets/26433718-8c7d-4a11-8d29-c8bcb4be0b9b)
 
 ### Prerequisites
-- python3.11.4
-- bcftools-1.18
+- Python 3.8 or higher
+- bcftools
 
-The DNAnexus dxpy Python library offers Python bindings for interacting with the DNAnexus Platform through its API. The dxpy package, part of the DNAnexus platform SDK, requires Python 3.8 or higher. The dxpy module is loaded in python3.11.4 on the HPC.
+The DNAnexus dxpy Python library offers Python bindings for interacting with the DNAnexus Platform through its API. The dxpy package, part of the DNAnexus platform SDK, requires Python 3.8 or higher. We used python3.11.4 module and bcftools-1.18 on the Institute's HPC system.
 
 Before working on the project you need to login to your project account using your DNAnexus account credentials
 ```
