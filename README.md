@@ -46,7 +46,7 @@ dx run swiss-army-knife \
 
 For iterating this command for each block of each chromosome use [UKB_SAS_extract_SS.sh](UKB_SAS_extract_SS.sh) script. Also, make sure [SAS_8020_500k_sampleIDS.csv](SAS_8020_500k_sampleIDS.csv) is in the same directory as the [UKB_SAS_extract_SS.sh](UKB_SAS_extract_SS.sh). [SAS_8020_500k_sampleIDS.csv](SAS_8020_500k_sampleIDS.csv) comprises of the Sample IDs of the 8020 participants from the UKB 500k Release.
 
-## STEP 1: Download extracted data
+## STEP 2: Download extracted data
 
 First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz
 ```
