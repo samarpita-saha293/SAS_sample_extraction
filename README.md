@@ -84,5 +84,3 @@ Furthermore, the normalized .vcf.gz files are used for producing plink format fi
 ```
 plink2 --vcf ukb24310_c#_norm.vcf.gz --keep SAS_sampleIDs --make-bed --out ukb24310_c#_SAS
 ```
-
-At the end of the process make sure you remove all the extracted files from the platform using "dx rm" to avoid the charges incurred for occupying storage space.
