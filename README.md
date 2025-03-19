@@ -21,7 +21,7 @@ Your credentials will be acquired from https://auth.dnanexus.com. While logging 
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
-## **STEP 1**: SAS sample extraction
+## STEP 1: SAS sample extraction
 
 For the variant extraction from DNAnexus platform we have used Swiss Army Knife (v4.13.0). BCFtools was accessed using Swiss-Army-Knife for SAS sample extractions. Provided below is the command used:
 
@@ -46,3 +46,11 @@ dx run swiss-army-knife \
 
 For iterating this command for each block of each chromosome use [UKB_SAS_extract_SS.sh](UKB_SAS_extract_SS.sh) script. Also, make sure [SAS_8020_500k_sampleIDS.csv](SAS_8020_500k_sampleIDS.csv) is in the same directory as the [UKB_SAS_extract_SS.sh](UKB_SAS_extract_SS.sh). [SAS_8020_500k_sampleIDS.csv](SAS_8020_500k_sampleIDS.csv) comprises of the Sample IDs of the 8020 participants from the UKB 500k Release.
 
+## STEP 1: Download extracted data
+
+```
+dx cd /Cohorts/BCFtools_SAS_extract/Chr_9
+```
+```
+dx download ${vcf_directory}ukb24310_c9_b${i}_v1_SAS_8020.vcf.gz
+```
