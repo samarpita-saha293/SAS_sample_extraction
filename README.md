@@ -20,7 +20,18 @@ Your credentials will be acquired from https://auth.dnanexus.com. While logging 
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
-## Folder Structure
+## Details about the extracted data from UKB RAP
+
+Below mentioned is the path of the storage system, you cannot ssh into this system, however the content can be viewed and accessed using nfs-share (via linux OS) or smb-share (via windows OS).
+```
+10.10.13.240:/bklab
+```
+Also, the path to lab storage server is mounted on our lab system. To ssh or scp you can use via the lab system with ip address 10.10.25.160 and cd to the path:
+```
+/mnt/nfsshare/samarpita/
+```
+
+## Directory Structure of UKB_data
 ```
 UKB_data
 |
@@ -56,3 +67,5 @@ UKB_data
 		|__ …
 		|__ Chr_22_variant_counts.txt
 ```
+
+
