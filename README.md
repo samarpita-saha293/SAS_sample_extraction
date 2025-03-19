@@ -48,7 +48,7 @@ For iterating this command for each block of each chromosome use [UKB_SAS_extrac
 
 ## STEP 2: Download extracted data
 
-First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz
+First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz using these commands using a bash script iterating over each block in a chromosome.
 ```
 dx cd /Cohorts/BCFtools_SAS_extract/Chr_#
 
