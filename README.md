@@ -70,6 +70,19 @@ bcftools view ukb24310_c14_concat.vcf.gz | grep -v -c '^#'
 ```
 Once the concatenation is done, we extracted the data for the GQ and QL scores across all variants for all samples in a given chromosome using bcftools and awk.
 
-## STEP 4: VCF Normalization and generating Plink format files
+## STEP 5: VCF Normalization and generating Plink format files
+
+Normalization is done to split records into biallelic sites, retaining both REF and ALT alleles. The -both flag used along with -m ensures that it retains all annotations. The normalized data is further indexed.
+
+```
+bcftools norm -m -both ukb24310_c#_concat.vcf.gz -Oz -o ukb24310_c#_norm.vcf.gz --threads ##
+
+bcftools index ukb24310_c#_norm.vcf.gz
+```  
+Furthermore, the normalized .vcf.gz files are used for producing plink format files using PLINK 2.0. 
+
+```
+plink2 --vcf ukb24310_c#_norm.vcf.gz --keep SAS_sampleIDs --make-bed --out ukb24310_c#_SAS
+```
 
 At the end of the process make sure you remove all the extracted files from the platform using "dx rm" to avoid the charges incurred for occupying storage space.
