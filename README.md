@@ -21,7 +21,7 @@ Your credentials will be acquired from https://auth.dnanexus.com. While logging 
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
-for the variant extraction from DNAnexus platform we have used Swiss Army Knife (v4.13.0). BCFtools was accessed using Swiss-Army-Knife for SAS sample extractions. Provided below is the breakdown of the command used:
+For the variant extraction from DNAnexus platform we have used Swiss Army Knife (v4.13.0). BCFtools was accessed using Swiss-Army-Knife for SAS sample extractions. Provided below is the command used:
 
 ```
 dx run swiss-army-knife \
@@ -35,7 +35,7 @@ dx run swiss-army-knife \
 ```
 
 ### Components of the command: 
--	-iin is used to specify the input. For the input we have .vcf.gz files from data-field 24310 (Bulk/DRAGEN WGS/DRAGEN population level WGS variants, pVCF format [500k release]). Along with the .vcf.gz files we have taken the SampleIDs.txt file which comprises of sample IDs of Indian, Pakistani and Bangladeshi Individuals.
+-	**-iin** is used to specify the input. For the input we have .vcf.gz files from data-field 24310 (Bulk/DRAGEN WGS/DRAGEN population level WGS variants, pVCF format [500k release]). Along with the .vcf.gz files we have taken the SampleIDs.txt file which comprises of sample IDs of Indian, Pakistani and Bangladeshi Individuals.
 -	-icmd is used to specify the BCFtools command, where we have used the flags –force-samples, -Oz and -o (Refer to the BCFtools Manual: samtools.github.io/bcftools/bcftools.html).
 -	--tag is used to assign your job name or category.
 -	--priority is set to normal.
