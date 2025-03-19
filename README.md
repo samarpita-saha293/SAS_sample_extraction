@@ -57,4 +57,6 @@ dx download ukb24310_c#_b$_v1_SAS_8020.vcf.gz
 
 ## STEP 3: Verify the Number of Variants in the downloaded files
 
-Use [variant_no.sh](variant_no.sh) for calculating the no. of variants in each block before concatenation of the blocks of each chromosome.
+Use [variant_no.sh](variant_no.sh) for calculating the no. of variants in each block before concatenation of the blocks of each chromosome. Verify the contents of the empty blocks using [verify.sh](verify.sh).
+
+NOTE: Place the download script, [variant_no.sh](variant_no.sh) and [verify.sh](verify.sh) inside the UKB_data/Chr_# directory.
