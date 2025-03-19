@@ -48,7 +48,7 @@ For iterating this command for each block of each chromosome use [UKB_SAS_extrac
 
 ## STEP 2: Download extracted data
 
-First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz using these commands using a bash script iterating over each block in a chromosome.
+First cd to the output directory on UKB RAP and then download the blocks of .vcf.gz using these commands with the help of a bash script iterating over each block in a chromosome.
 ```
 dx cd /Cohorts/BCFtools_SAS_extract/Chr_#
 
@@ -56,3 +56,5 @@ dx download ukb24310_c#_b$_v1_SAS_8020.vcf.gz
 ```
 
 ## STEP 3: Verify the Number of Variants in the downloaded files
+
+Use [variant_no.sh](variant_no.sh) for calculating the no. of variants in each block before concatenation of the blocks of each chromosome.
