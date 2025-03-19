@@ -31,7 +31,7 @@ Also, the path to lab storage server is mounted on our lab system. To ssh or scp
 /mnt/nfsshare/samarpita/
 ```
 
-## Directory Structure of UKB_data
+### Directory Structure of UKB_data
 ```
 UKB_data
 |
