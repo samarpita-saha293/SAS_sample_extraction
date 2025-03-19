@@ -60,3 +60,16 @@ dx download ukb24310_c#_b$_v1_SAS_8020.vcf.gz
 Use [variant_no.sh](variant_no.sh) for calculating the no. of variants in each block before concatenation of the blocks of each chromosome. Verify the contents of the empty blocks using [verify.sh](verify.sh).
 
 NOTE: Place the download script, [variant_no.sh](variant_no.sh) and [verify.sh](verify.sh) inside the UKB_data/Chr_# directory.
+
+## STEP 4: Concatenation, Count total no. of Variants and Quality Checking
+
+Concatenation of the blocks were done using "bcftools concat" to concatenate the blocks in a sequential order. Also, The total no. of variants were calculated using the below mentioned command:
+
+```
+bcftools view ukb24310_c14_concat.vcf.gz | grep -v -c '^#'
+```
+Once the concatenation is done, we extracted the data for the GQ and QL scores across all variants for all samples in a given chromosome using bcftools and awk.
+
+## STEP 4: VCF Normalization and generating Plink format files
+
+At the end of the process make sure you remove all the extracted files from the platform using "dx rm" to avoid the charges incurred for occupying storage space.
