@@ -21,6 +21,8 @@ Your credentials will be acquired from https://auth.dnanexus.com. While logging 
 
 Use dx login --timeout to control the expiration date, or dx logout to end this session.
 
+## **STEP 1**: SAS sample extraction
+
 For the variant extraction from DNAnexus platform we have used Swiss Army Knife (v4.13.0). BCFtools was accessed using Swiss-Army-Knife for SAS sample extractions. Provided below is the command used:
 
 ```
