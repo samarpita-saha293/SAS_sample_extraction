@@ -22,7 +22,7 @@ Use dx login --timeout to control the expiration date, or dx logout to end this 
 
 ## Folder Structure
 ```
-**UKB_data**
+__UKB_data__
 |
 |___ Chr_1/
 |	|__ ukb24310_c1_b1_v1_SAS_8020.vcf.gz
