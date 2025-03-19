@@ -1,5 +1,7 @@
 # SAS_sample_extraction
 
+This GitHub repository provides tutorials and scripts used to analyze population-level genotype data on UK Biobank Research Analysis Platform.
+
 ### Prerequisites
 - python3.11.4
 - bcftools-1.18
