@@ -1,6 +1,6 @@
 # SAS_sample_extraction
 
-This GitHub repository provides tutorials and scripts used to analyze population-level genotype data on UK Biobank Research Analysis Platform. For our study we have extracted variant information from WGS data (UKB Data-Field 24310) of 8020 participants belonging to Indian, Pakistani and Bangladeshi populations. The ethnic backgrounds of these Individuals are self-claimed and this information has been collected via a set of questions from a questionnaire (https://biobank.ndph.ox.ac.uk/showcase/refer.cgi?id=807). 
+This GitHub repository provides tutorials and scripts used to analyze population-level genotype data on UK Biobank Research Analysis Platform. For our study we have extracted variant information from WGS data (UKB Data-Field 24310) of 8020 participants belonging to Indian, Pakistani and Bangladeshi populations. The ethnic backgrounds of these Individuals are self-claimed and this information has been collected via a set of questions from a questionnaire. 
 
 ## Preprocessing workflow
 
