@@ -63,7 +63,7 @@ NOTE: Place the download script, [variant_no.sh](variant_no.sh) and [verify.sh](
 
 ## STEP 4: Concatenation, Count total no. of Variants and Quality Checking
 
-Concatenation of the blocks were done using "bcftools concat" to concatenate the blocks in a sequential order. Also, The total no. of variants were calculated using the below mentioned command:
+"bcftools concat" was used to concatenate the blocks in a sequential order. Also, The total no. of variants were calculated using the below mentioned command:
 
 ```
 bcftools view ukb24310_c14_concat.vcf.gz | grep -v -c '^#'
