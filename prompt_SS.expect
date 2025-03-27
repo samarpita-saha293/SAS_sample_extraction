@@ -1,1 +1,27 @@
+#!/usr/bin/expect
 
+# timeout value is 10 min, you can do some tweaking with the timeout value if required
+set timeout_value 600
+
+# Set timeout to handle waiting for responses
+set timeout 1
+
+# Command to run the dx command with necessary inputs
+spawn sh UKB_SAS_extract_K.sh
+
+while {1} {
+    # Set the timeout for each loop iteration
+    set timeout $timeout_value
+
+# Expect the confirmation prompt and automatically send "Y"
+expect "Confirm running the executable with this input \[Y\/n\]"
+send -- "Y\r"
+
+# Expect the watch job prompt and automatically send "Y"
+expect "Watch launched job now? \[Y\/n\]"
+send -- "Y\r"
+
+
+}
+# Wait for the command to finish
+expect eof
