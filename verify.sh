@@ -6,7 +6,7 @@ output_file="verify_Chr#.txt"
 # Clear the output file if it exists
 > "$output_file"
 
-# Loop through the specified range of files
+# Loop through the specified range of bins
 for i in {1..1200}; do
   # Define the VCF file name for the current iteration
   vcf_file="ukb24310_c#_b${i}_v1_SAS_8020.vcf.gz"
@@ -16,7 +16,7 @@ for i in {1..1200}; do
     # Append a header indicating the current file being processed
     echo "Processing $vcf_file" >> "$output_file"
 
-    # Run the command and append the result to the output file
+    # Run the command and append the result to the output file. This will print the header of each file
     zgrep -v "##" "$vcf_file" | cut -f 1,2,3,8,9 | head >> "$output_file"
 
     # Append a blank line to separate outputs
