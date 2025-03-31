@@ -63,10 +63,16 @@ NOTE: Place the download script, [variant_no.sh](variant_no.sh) and [verify.sh](
 
 ## STEP 4: Concatenation, Count total no. of Variants and Quality Checking
 
-"bcftools concat" was used to concatenate the blocks in a sequential order. Also, The total no. of variants were calculated using the below mentioned command:
+"bcftools concat" was used to concatenate the blocks in a sequential order. The "-f" flag is used to assign the list of vcf files from a chromosome listed in a sequential order.
 
 ```
-bcftools view ukb24310_c14_concat.vcf.gz | grep -v -c '^#'
+bcftools concat -f vcflist_# -Oz -o ukb24310_c#_concat.vcf.gz
+```
+
+The total no. of variants were calculated using the below mentioned command:
+
+```
+bcftools view ukb24310_c#_concat.vcf.gz | grep -v -c '^#'
 ```
 Once the concatenation is done, we extracted the data for the GQ and QL scores across all variants for all samples in a given chromosome using bcftools and awk.
 
@@ -75,7 +81,7 @@ Once the concatenation is done, we extracted the data for the GQ and QL scores a
 Normalization is done to split records into biallelic sites, retaining both REF and ALT alleles. The -both flag used along with -m ensures that it retains all annotations. The normalized data is further indexed.
 
 ```
-bcftools norm -m -both ukb24310_c#_concat.vcf.gz -Oz -o ukb24310_c#_norm.vcf.gz --threads ##
+bcftools norm -m -both ukb24310_c#_concat.vcf.gz -Oz -o ukb24310_c#_norm.vcf.gz 
 
 bcftools index ukb24310_c#_norm.vcf.gz
 ```  
